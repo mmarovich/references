@@ -6,6 +6,7 @@ function bubbleSort(a) {
 
         for (var i = 0; i < a.length; i++) {
             if (a[i] > a[i + 1]) {
+                // 2 numbers are swapped here, and if a swap happens, falsify sorted so while loop continues.
                 var temp = a[i];
                 a[i] = a[i + 1];
                 a[i + 1] = temp;
